@@ -1,4 +1,10 @@
-class AppointmentForm extends React.Component{
+import React from 'react'
+import Datetime from 'react-datetime'
+
+import 'react-datetime/css/react-datetime'
+
+
+export default class AppointmentForm extends React.Component{
   constructor(props){
     super(props);
     /*this.onChange = this.onChange.bind(this)*/
@@ -25,14 +31,11 @@ class AppointmentForm extends React.Component{
       this.props.onUserInput(obj);
     }
   }
-  
-  
-  
-  render(){
+
+  render () {
     var inputProps={
       name: 'appt_time'
-    }
-    
+    };
     return(
       <div>
         <h2>Make a new appointment</h2>
