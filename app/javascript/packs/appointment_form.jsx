@@ -14,7 +14,7 @@ export default class AppointmentForm extends React.Component{
   }
   handleChange(e){
     var name = e.target.name;
-    obj = {};
+    const obj = {};
     obj[name] = e.target.value;
     this.props.onUserInput(obj);
   }
