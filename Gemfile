@@ -56,3 +56,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pg'
 gem 'webpacker'
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
